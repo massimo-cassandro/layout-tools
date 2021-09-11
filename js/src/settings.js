@@ -1,5 +1,4 @@
 export var lt = {
-  vers: '3.3.1',
   times: '&VeryThinSpace;&times;&VeryThinSpace;', // carattere x e spaziatura
   unitSpacing: '&VeryThinSpace;',
   storage_key: 'lt_settings',

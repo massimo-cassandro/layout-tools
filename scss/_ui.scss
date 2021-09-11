@@ -8,78 +8,74 @@
     </div>
   </div>
 */
+/* stylelint-disable selector-max-id */
 #lt-wrapper {
-  font-family: sans-serif;
-  font-size: small;
   position: fixed;
-  z-index: 9999;
   top: 4px;
   left: 0;
+  z-index: 9999;
+  font-family: sans-serif;
+  font-size: small;
   color: $lt-color;
   background: transparent;
-  transition:opacity .3s linear;
+  transition: opacity .3s linear;
 
   .lt-inner-wrapper{
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .lt-content {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
     align-items: flex-start;
-    border:1px solid $lt-color;
-    border-bottom-right-radius:8px;
-
-    overflow: hidden;
+    justify-content: flex-start;
     width: 100vw;
-    max-width:14rem;
+    max-width: 14rem;
+    overflow: hidden;
     background: $lt-bg;
+    border: 1px solid $lt-color;
+    border-bottom-right-radius: 8px;
 
     > div {
+      width: 100%;
       padding: 6px;
-      width:100%;
 
       &:not(:last-child) {
-        border-bottom:2px solid $lt-color;
+        border-bottom: 2px solid $lt-color;
       }
     }
   }
 
   .lt-content, .lt-brkpt {
-    border-width: 2px;
     border-color: $lt-color;
     border-style: solid solid solid none;
+    border-width: 2px;
   }
 
-  .lt-content>div,
+  .lt-content > div,
   .lt-brkpt {
     flex: 0 1 auto;
   }
 
   .lt-brkpt {
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5em;
+    padding: 1px 6px 1px 3px;
     font-size: small;
 
-
     font-weight: bold;
-    padding: 1px 6px 1px 3px;
-    color:$lt-color;
-    border-radius: 0 1em 1em 0;
-    background: $lt-bg;
+    color: $lt-color;
     cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:1.5em;
-
+    background: $lt-bg;
+    border-radius: 0 1em 1em 0;
 
     &:hover {
       color: $lt-bg;
@@ -88,17 +84,17 @@
   }
 
   dl {
-    margin:0;
+    margin: 0;
     dt {
       font-weight: bold;
-      border:none;
+      border: none;
     }
     dd {
-      padding-left:1rem;
+      padding-left: 1rem;
       &:not(:last-child) {
-        border-bottom:1px dotted $lt-color;
-        margin-bottom:.4rem;
-        padding-bottom:.2rem;
+        padding-bottom: .2rem;
+        margin-bottom: .4rem;
+        border-bottom: 1px dotted $lt-color;
       }
     }
   }
@@ -116,30 +112,32 @@
     }
   }
   .heading {
-    font-weight: bold;
     font-size: 110%;
+    font-weight: bold;
   }
   label {
     color:$lt-color;
   }
   button {
-    border:1px solid $lt-color;
-    border-radius:3px;
     padding: 2px 6px;
-    margin-right:6px;
-    background: $lt-bg;
-    color:$lt-color;
+    margin-right: 6px;
+    color: $lt-color;
     cursor: pointer;
+    background: $lt-bg;
+    border: 1px solid $lt-color;
+    border-radius: 3px;
+
     &:hover {
-      background: $lt-color;
       color: $lt-bg;
+      background: $lt-color;
     }
   }
-  input[type=checkbox] {
-    margin-right:6px;
+  input[type='checkbox'] {
+    margin-right: 6px;
   }
 
   @media print {
     display: none;
   }
 } // end #lt-wrapper
+/* stylelint-enable selector-max-id */

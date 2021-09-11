@@ -1,4 +1,4 @@
-import {lt} from './_settings';
+import {lt} from './settings.js';
 /*
   caricamento indicatori breakpoint e dimensioni viewport
 
@@ -29,7 +29,7 @@ export default function () {
         '<span class="d-none d-sm-inline d-md-none">sm</span>' +
         '<span class="d-none d-md-inline d-lg-none">md</span>' +
         '<span class="d-none d-lg-inline d-xl-none">lg</span>' +
-        '<span class="d-none d-xl-inline d-xxl-none">lg</span>' +
+        '<span class="d-none d-xl-inline d-xxl-none">xl</span>' +
         '<span class="d-none d-xxl-inline">xxl</span>',
 
     foundation6 : '<span class="show-for-small-only">small</span>' +
