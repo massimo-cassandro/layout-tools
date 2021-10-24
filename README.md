@@ -1,4 +1,6 @@
-# Layout Tools (v. 3)
+# Layout Tools (v. 4)
+
+> Layout Tools has been moved to [@massimo-cassandro/m-utilities](https://github.com/massimo-cassandro/m-utilities). This repository will no longer be updated.
 
 Layout development utility.
 
