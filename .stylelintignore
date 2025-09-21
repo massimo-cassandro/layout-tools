@@ -1,0 +1,5 @@
+
+dist/*.css
+/**/node_modules/**/*.css
+/**/node_modules/**/*.scss
+/**/node_modules/**/*.less
