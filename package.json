@@ -1,0 +1,46 @@
+{
+  "name": "@massimo-cassandro/layout-tools",
+  "version": "4.1.0",
+  "description": "Layout development Utilities",
+  "main": "js/layout_tools.js",
+  "scripts": {
+    "rollup": "npx rollup --config --watch",
+    "sass": "node_modules/.bin/sass scss/layout-tools.scss dist/layout-tools.css --load-path=node_modules/ --style=compressed --watch",
+    "upd_version_var": "node upd_version.js && npx rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/massimo-cassandro/layout-tools.git#master"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "front-end-development",
+    "foundation",
+    "images",
+    "bootstrap",
+    "tools"
+  ],
+  "author": "Massimo Cassandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/massimo-cassandro/layout-tools/issues"
+  },
+  "homepage": "https://github.com/massimo-cassandro/layout-tools#readme",
+  "files": [
+    "dist/*.{css,js,map}",
+    "js/*.js",
+    "scss/*.scss"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "eslint": "^7.30.0",
+    "rollup": "^2.52.8",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.35.1",
+    "stylelint": "^16.2.1",
+    "stylelint-config-twbs-bootstrap": "^14.0.0"
+  }
+}
