@@ -10,6 +10,7 @@ Uso: inserire
 <script src="https://massimo-cassandro.github.io/layout-tools/dist/lt.js"
   data-fw="bs5"
   data-position="top left"
+  crossorigin="anonymous"
 ></script>
 ```
 
