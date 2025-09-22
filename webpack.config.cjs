@@ -13,14 +13,14 @@ const path = require('path');
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 const config = {
-  mode: isDevelopment? 'development' : 'production',
+  mode: process.env.NODE_ENV,
   watch: isDevelopment,
   devtool: isDevelopment? 'inline-source-map' : false,
 
   // =>> entry
   // https://webpack.js.org/configuration/entry-context/
   entry: {
-    breakpoints: './src/breakpoints.js',
+    'lt': './src/breakpoints.js',
   },
 
   // =>> output

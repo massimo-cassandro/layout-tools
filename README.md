@@ -7,7 +7,7 @@ Mostra un indicatore del breakpoint CSS attivo
 Uso: inserire
 
 ```
-<script src="https://massimo-cassandro.github.io/layout-tools/dist/breakpoints.js"
+<script src="https://massimo-cassandro.github.io/layout-tools/dist/lt.js"
   data-fw="bs5"
   data-position="top left"
 ></script>
