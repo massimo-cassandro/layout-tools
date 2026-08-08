@@ -1,5 +1,9 @@
 # Layout tools
 
+***
+*ARCHIVED* and merged inside [minimo](https://github.com/massimo-cassandro/minimo)
+***
+
 ## Breakpoints 
 
 Mostra un indicatore del breakpoint CSS attivo
